@@ -5,7 +5,7 @@ public class LittleGhost {
 
     public void attack(Hero hero){
         System.out.println("リトルゴーストは体当たりを繰り出した！");
-        hero.hp -= 20;
+        hero.setTmpHp(hero.getTmpHp() -20);
         System.out.println("体力が20減った！");
     }
 }
